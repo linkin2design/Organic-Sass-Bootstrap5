@@ -1,0 +1,70 @@
+#trendy {
+    position: relative;
+
+
+    .trendy-banner {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .trendy-nav {
+        padding-bottom: 0px;
+
+        ul li {
+            margin-right: 167px;
+            @include fonts('inter', 25px, $scolor, 700);
+            text-transform: capitalize;
+            cursor: pointer;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .mixitup-control-active {
+            border-bottom: 3px solid $textorange !important;
+            transition: all linear 0.3s;
+        }
+
+    }
+
+    .s-product {
+        .image {
+            position: relative;
+
+            img {
+                transition: all linear 0.4s;
+            }
+
+            .s-icon {
+                position: absolute;
+                bottom: 5%;
+                left: 50%;
+                transform: translateX(-50%);
+
+                a {
+                    font-size: 13px;
+                    color: $textorange;
+                }
+            }
+        }
+
+        .text-body {
+            padding-top: 20px;
+
+            h3 {
+                @include fonts('inter', 20px, $scolor, 600);
+                text-transform: capitalize;
+            }
+
+            p {
+                @include fonts('inter', 16px, $paracolor, 400);
+            }
+        }
+
+        &:hover .image img {
+            transform: scale(1.1);
+        }
+    }
+}

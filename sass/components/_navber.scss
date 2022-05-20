@@ -1,0 +1,41 @@
+#top-bar {
+    background: $topbarbg;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    .top-bar-text {
+        h3 {
+            @include fonts('inter', 16px, $pcolor, 400)
+        }
+    }
+}
+
+.navbar {
+    .nav-item {
+        a {
+            @include fonts('inter', 16px, $scolor, 400);
+            transition: all linear 0.3s;
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+            padding-right: 52px !important;
+            padding-left: 52px !important;
+
+            &:hover {
+                @include fonts('inter', 16px, $hovercolor, 400);
+            }
+        }
+
+
+    }
+
+    .cart {
+        a {
+            color: $scolor;
+            transition: all linear 0.3s;
+
+            &:hover {
+                color: $hovercolor;
+            }
+        }
+    }
+}

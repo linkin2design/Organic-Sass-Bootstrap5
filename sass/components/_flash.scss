@@ -1,0 +1,51 @@
+#flash {
+    background: url(../images/flash-banner.png) no-repeat center / cover;
+    padding-top: 130px;
+
+
+    .flash-text {
+        h1 {
+            @include fonts('inter', 45px, $scolor, 700);
+            text-transform: capitalize;
+        }
+
+        h4 {
+            @include fonts('inter', 30px, $scolor, 600);
+            text-transform: capitalize;
+        }
+
+        p {
+            @include fonts('inter', 16px, $paracolor, 400);
+            text-transform: capitalize;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            padding-right: 305px;
+        }
+
+        a {
+            @include fonts('inter', 20px, $pcolor, 600);
+            font-weight: 600;
+            padding: 15px 50px;
+            background: #f47606;
+            border-radius: 10px;
+            text-transform: capitalize;
+
+        }
+    }
+
+    #countdown {
+        padding-top: 40px;
+
+        li {
+            display: inline-block;
+            @include fonts('inter', 28px, $scolor, 500);
+            text-transform: capitalize;
+        }
+
+        li span {
+            display: block;
+            @include fonts('inter', 36px, $scolor, 700);
+            text-align: center;
+        }
+    }
+}

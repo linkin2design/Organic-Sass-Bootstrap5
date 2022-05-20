@@ -1,0 +1,105 @@
+#testimonial {
+    background: $flashbg;
+    margin-top: 100px;
+    position: relative;
+
+    h1 {
+        @include fonts('inter', 35px, $scolor, 700);
+        text-transform: capitalize;
+        position: absolute;
+        top: 18%;
+        left: 12%;
+        padding-left: 20px;
+    }
+
+    .text {
+        padding-left: 95px;
+
+        .i-image {
+            margin-top: 167px;
+        }
+
+        .icon {
+            margin-top: 33px;
+            margin-bottom: 30px;
+
+            i {
+                color: $textorange;
+            }
+        }
+
+        p {
+            margin-bottom: 30px;
+            padding-right: 143px;
+            @include fonts('inter', 16px, $paracolor, 400);
+            text-transform: capitalize;
+        }
+
+        .s-image {
+            padding-right: 27px;
+        }
+    }
+
+    .testimonal-image img {
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
+
+    .arrow-icon {
+        font-size: 20px;
+
+        i {
+            transition: all linear 0.3s;
+
+            &:hover {
+                color: $textorange;
+            }
+        }
+    }
+
+    // swiper
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        // width: 100%;
+        // height: 100%;
+        object-fit: cover;
+    }
+
+    .swiper {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .swiper-button-next {
+        @include fonts('inter', 30px, $hovercolor, 400);
+    }
+
+    .swiper-button-prev {
+        @include fonts('inter', 30px, $hovercolor, 400);
+    }
+
+
+
+
+}

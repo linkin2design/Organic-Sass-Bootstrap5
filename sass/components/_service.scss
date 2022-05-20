@@ -1,0 +1,14 @@
+#service {
+    padding-top: 130px;
+
+    h3 {
+        @include fonts('inter', 25px, $scolor, 600);
+        text-transform: capitalize;
+        margin-top: 30px;
+    }
+
+    p {
+        text-transform: capitalize;
+        @include fonts('inter', 16px, $paracolor, 400)
+    }
+}

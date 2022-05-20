@@ -1,0 +1,88 @@
+#buy {
+    .buy-dtls {
+
+        h1 {
+            padding-bottom: 17px;
+            @include fonts('inter', 25px, $scolor, 600);
+        }
+
+        .icon-dstls {
+            padding-bottom: 22px;
+
+            .icon {
+                color: $textorange;
+                font-size: 16px;
+            }
+
+            .review {
+                p {
+                    text-transform: capitalize;
+                    @include fonts('inter', 16px, $paracolor, 400);
+                }
+
+                span {
+                    @include fonts('inter', 16px, $scolor, 600);
+                }
+            }
+        }
+
+        .price {
+            padding-bottom: 25px;
+            @include fonts('inter', 25px, $textorange, 600);
+        }
+
+        .dtls {
+            p {
+                padding-right: 77px;
+                @include fonts('inter', 16px, $paracolor, 400);
+            }
+        }
+
+
+    }
+
+    .cart {
+
+        .wt {
+            padding-left: 37px;
+            padding-right: 37px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            border: 1px solid $paracolor;
+            border-radius: 5px;
+
+            a {
+                @include fonts('inter', 20px, $scolor, 600);
+            }
+        }
+
+        .cart-dtl {
+            padding-left: 37px;
+            padding-right: 37px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            border-radius: 5px;
+            background: $textorange;
+
+            a {
+                text-transform: capitalize;
+                @include fonts('inter', 20px, white, 600);
+            }
+        }
+    }
+
+    .buy-now {
+        padding-top: 20px;
+
+        a {
+            background: $hovercolor;
+            padding-left: 167px;
+            padding-right: 167px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            border-radius: 5px;
+            display: inline-block;
+            @include fonts('inter', 20px, white, 600);
+        }
+    }
+}

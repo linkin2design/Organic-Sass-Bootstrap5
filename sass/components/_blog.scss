@@ -1,0 +1,49 @@
+#blog {
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    .blog-items {
+
+        .blog-images {
+            margin-bottom: 20px;
+        }
+
+        .text-body {
+
+
+            .number {
+                border: 1px solid #C9C9C9;
+                text-align: center;
+                padding-top: 13px;
+                padding-bottom: 13px;
+                padding-left: 15px;
+                padding-right: 15px;
+                border-radius: 5px;
+                @include fonts('inter', 25px, $scolor, 600);
+            }
+
+            .details {
+                h1 {
+                    text-transform: capitalize;
+                    padding-right: 70px;
+                    @include fonts('inter', 20px, $scolor, 600);
+                }
+
+                p {
+                    text-transform: capitalize;
+                    padding-top: 10px;
+                    padding-right: 10px;
+                    @include fonts ('inter', 16px, $paracolor, 400);
+
+                }
+
+                a {
+                    padding-top: 10px;
+                    text-transform: capitalize;
+                    padding-left: 5px;
+                    @include fonts ('inter', 16px, $textorange, 400);
+                }
+            }
+        }
+    }
+}

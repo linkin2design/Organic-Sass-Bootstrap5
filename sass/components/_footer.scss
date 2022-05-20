@@ -1,0 +1,101 @@
+#footer {
+    background: $flashbg;
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    .footer-logo {
+        padding-bottom: 20px;
+    }
+
+    .details {
+        p {
+            text-transform: capitalize;
+            @include fonts('inter', 16px, $paracolor, 400);
+        }
+
+        .phone a {
+            @include fonts('inter', 16px, $paracolor, 400);
+        }
+
+        .mail a {
+            @include fonts('inter', 16px, $paracolor, 400);
+        }
+
+        .site a {
+            @include fonts('inter', 16px, $paracolor, 400);
+        }
+    }
+
+    .customer-service h1 {
+        text-transform: capitalize;
+        padding-bottom: 20px;
+        @include fonts('inter', 20px, $scolor, 600);
+    }
+
+    .service-dtl {
+        p {
+            cursor: pointer;
+            text-transform: capitalize;
+            @include fonts('inter', 16px, $paracolor, 400);
+            transition: all linear 0.3s;
+
+            &:hover {
+                padding-left: 10px;
+                color: $hovercolor;
+            }
+        }
+
+
+
+        .ten {
+            input {
+                border-radius: 15px;
+                transition: all .6s ease-in-out .3s;
+                width: 180px;
+                padding-top: 14px;
+                padding-bottom: 14px;
+
+                &::placeholder {
+                    text-align: center;
+                }
+
+                &:focus {
+                    transition-delay: 0;
+                    width: 250px;
+                    outline: none;
+
+                    ~button {
+                        transform: rotateZ(360deg);
+
+                        &.btn-search {
+                            background: $topbarbg;
+                            color: #fff;
+                            left: 212px;
+                            transition-delay: 0;
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            button {
+                transition: all .6s ease-in-out;
+
+                &.btn-search {
+                    background: $btnbg;
+                    border-radius: 50%;
+                    height: 40px;
+                    left: 92px;
+                    top: 2px;
+                    transition-delay: .3s;
+                    width: 40px;
+
+                }
+            }
+        }
+
+    }
+}

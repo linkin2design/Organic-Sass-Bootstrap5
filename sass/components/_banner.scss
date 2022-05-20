@@ -1,0 +1,29 @@
+#banner {
+    background: url(../images/banner.jpg) no-repeat center / cover;
+    padding-top: 200px;
+    padding-bottom: 189px;
+
+    h1 {
+        @include fonts('inter', 60px, $scolor, 700);
+        text-transform: uppercase;
+
+        span {
+            color: $textorange;
+        }
+    }
+
+    p {
+        @include fonts('inter', 16px, $paracolor, 400);
+        padding-right: 149px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    a {
+        @include fonts('inter', 16px, $pcolor, 600);
+        padding: 15px 50px;
+        background: $btnbg;
+        border-radius: 10px;
+
+    }
+}

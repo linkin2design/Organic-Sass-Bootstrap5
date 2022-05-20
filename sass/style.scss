@@ -1,0 +1,18 @@
+// mixins
+
+@import"./mixins/font";
+
+
+// variable
+@import"./variables/color";
+@import"./variables/background";
+
+
+// common
+@import"./common/common";
+
+
+
+// page 
+@import"./page/home";
+@import"./page/shop";
